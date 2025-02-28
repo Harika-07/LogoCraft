@@ -1,0 +1,90 @@
+home.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 60px;
+            position: relative;
+        }
+        .buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .button {
+            padding: 12px 24px;
+            border-radius: 8px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .login {
+            background-color: #28a745;
+        }
+        .login:hover {
+            background-color: #218838;
+        }
+        .register {
+            background-color: #f0ad4e;
+        }
+        .register:hover {
+            background-color: #ec971f;
+        }
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            background: linear-gradient(to right, #3b82f6, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 18px;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+        }
+        .create-button {
+            padding: 16px 32px;
+            background-color: #007bff;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .create-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="window.location.href='login.html'" class="button login">Login</button>
+        <button onclick="window.location.href='register.html'" class="button register">Register</button>
+    </div>
+    <div>
+        <h1>LogoCraft</h1>
+        <p>Create stunning logos effortlessly with LogoCraft.</p>
+        <button onclick="window.location.href='create-logo.html'" class="create-button">Create Logo</button>
+    </div>
+</body>
+</html>
